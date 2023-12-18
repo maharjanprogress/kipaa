@@ -1,0 +1,494 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <title>KIPAA</title>
+    <style>
+        
+            .mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.texts {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.texts {font-size: 11px}
+}
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container flex">
+            <div class="left">
+                <a href=""><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/403404037_289424186923351_6156591624680652792_n.png?_nc_cat=107&ccb=1-7&_nc_sid=510075&_nc_ohc=OR1o-JXZmAwAX_2ZYZH&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQh9NBiwBe1eMSXWWGvwpezsLZEuLL_KVeGztvCeDyzjQ&oe=65A7B6E8" alt="" srcset="" /></a>
+            </div>
+
+            <div class="right">
+                <ul class="flex">
+                    <li id="home">Home</li>
+                    <li id="services">
+                        Services
+                        <div class="dropdown">
+                            <div data-open="#admina">admin</div>
+                        </div>
+                    </li>
+                    <li id="about" data-open="#aboutContent">About</li>
+                    <li id="support" data-open="#supportContent">Support</li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+
+    <div id="pop1">
+        <div id="aboutContent" class="pop">
+            <h2 style="
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: 5px;
+            border-bottom: 1px solid black;
+          ">
+                About KIPAA
+            </h2>
+            <div class="aboutInsideContent">
+                <!-- <i class="fa-regular fa-circle-xmark fa-lg closeBtn" data-close></i> -->
+                <p>Created On: 1st May - 18th May <br /></p>
+                <p>
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/403404037_289424186923351_6156591624680652792_n.png?_nc_cat=107&ccb=1-7&_nc_sid=510075&_nc_ohc=EBF8xQlnmhoAX9NPhp6&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQ5TYHws00BTdrwuZj08BCOJnik2QNoJJT0H6etW3zQHA&oe=65A54C28"
+                     alt="" width=512 >
+                </p>
+                <p>
+                    Team Members: <br />
+                    <a href="">Pranaya Maharjan</a>,
+                    <a href="">Shirish Maharjan</a>
+                    <a href="">Rabin Lamichhane</a>
+                </p>
+            </div>
+        </div>
+        <div id="overlay" class="pop"></div>
+    </div>
+
+    <div id="pop5">
+      <div id="locate" class="pop">
+          <h2 style="
+          text-align: center;
+          font-weight: 500;
+          margin-bottom: 5px;
+          border-bottom: 1px solid black;
+        ">
+              OUR LOCATION
+          </h2>
+          <div class="aboutInsideContent">
+              <!-- <i class="fa-regular fa-circle-xmark fa-lg closeBtn" data-close></i> -->
+              <p>Come visit us at...</p>
+              <p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5942.515405267227!2d85.28087352897822!3d27.672767853432443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDQwJzEzLjQiTiA4NcKwMTYnNTUuOSJF!5e0!3m2!1sen!2snp!4v1702820449065!5m2!1sen!2snp"  height="450" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </p>
+          </div>
+      </div>
+      <div id="overlay" class="pop"></div>
+  </div>
+
+    <div id="pop2">
+        <div id="supportContent" class="pop">
+            <h2 style="
+            font-weight: 500;
+            margin-bottom: 5px;
+            border-bottom: 1px solid black;
+          ">
+                Support Center
+            </h2>
+            <!-- <i class="fa-regular fa-circle-xmark fa-lg closeBtn" data-close></i> -->
+            <div class="supportInsideContent">
+                <img id="supportImg" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/409637955_926932528794760_2626531751233180724_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=510075&_nc_ohc=Y1RCxlmjO-gAX9iAOTa&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTKGN0LxskYYDILQ32bxdzC4MV-9gmiTfBv5Yagebisjg&oe=65A7E5AA" alt="" />
+                <p><br><br>
+                  <div class="connect">
+                    For webiste support or technical difficulties:<br />
+                    <br>
+                    <form action="https://formsubmit.co/progressmaharjan1@gmail.com" method="POST">
+                      <input type="hidden" name="_subject" value="New submission!">
+                      
+                      <input type="text" name="message" placeholder="let us know what problem you are facing" required style="width:90%;
+  resize: vertical;
+  padding:15px;
+  border-radius:15px;
+  border: 1px;
+  box-shadow:4px 4px 10px rgb(64, 61, 12);
+  height:150px;
+  margin: 20px;">
+                      <button type="submit">Send</button>
+                    </form>
+                </div>
+                </p>
+                <p><br>We will be happy to help you.</p>
+            </div>
+        </div>
+        <div id="overlay" class="pop"></div>
+    </div>
+
+    <div id="pop3">
+        <div id="contactContent" class="pop">
+            <h2 style="
+            font-weight: 500;
+            margin-bottom: 5px;
+            border-bottom: 1px solid black;
+          ">
+                Contact
+            </h2>
+            <!-- <i class="fa-regular fa-circle-xmark fa-lg closeBtn" data-close></i> -->
+            <div class="contactInsideContent">
+                <p>
+                    <!-- <i class="fa fa-location-dot"></i> -->
+
+                    Address: <br />
+                    Kirtipur-05, Kathmandu, Nepal <br />
+                </p>
+                <p>
+                    <!-- <i class="fa fa-phone"></i> -->
+                    Phone: <br />
+                    +977-9840510225 <br />
+                    +977-9840510225 <br />
+                    +977-9840510225 <br />
+                </p>
+                <p>
+                    <!-- <i class="fa fa-envelope"></i> -->
+                    Email: <br />
+                    <a href="">fulmaya@gmail.com</a> <br />
+                    <a href="">fulmaya@gmail.com</a> <br />
+                    <a href="">fulmaya@gmail.com</a> <br />
+                </p><br>
+                <div class="connect">
+                    Connect with us:<br />
+                    <br>
+                    <form action="https://formsubmit.co/progressmaharjan1@gmail.com" method="POST">
+                      <input type="hidden" name="_subject" value="New submission!">
+                      <input type="email" name="email" placeholder="Email Address" required style="width:90%;
+  resize: vertical;
+  padding:15px;
+  border-radius:15px;
+  border: 1px;
+  box-shadow:4px 4px 10px rgb(64, 61, 12);
+  height:50px;">
+                      <input type="text" name="message" placeholder="write your message here" required style="width:90%;
+  resize: vertical;
+  padding:15px;
+  border-radius:15px;
+  border: 1px;
+  box-shadow:4px 4px 10px rgb(64, 61, 12);
+  height:150px;
+  margin: 20px;">
+                      <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="overlay" class="pop"></div>
+    </div>
+
+    
+    <div id="pop4">
+        <div id="admina" class="pop">
+        <div class="a_head">
+        <h2 style="font-weight: 500">Our Admins</h2>
+      </div>
+      <div class="a_body">
+        <div class="docList">
+
+          <div class="doc" id="doc">
+            <div class="docImg" id="image">
+              <img
+                src="https://scontent.fktm10-1.fna.fbcdn.net/v/t39.30808-6/396737944_7816982111659651_7977501437923104415_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=783fdb&_nc_ohc=K51vxs6WsLYAX_JuuNy&_nc_ht=scontent.fktm10-1.fna&oh=00_AfB_Blounf5sjJwQ_hPuXuBhacFlQUsVA8jJzucR77zaLA&oe=6582DE3C"
+                alt=""
+                height=130
+                width=150
+              />
+            </div>
+            <div class="docInfo">
+              <h3 id="name">Pranaya Maharjan</h3>
+              <p class="edu">BE Civil</p>
+              <p class="speciality">Road</p>
+              <p class="experience">6+ years of experience</p>
+              <p class="availability">9:00 AM to 5:00 PM</p>
+            </div>
+            <div class="book"><a href="https://www.facebook.com/pranay.mhrjn"><button>Request Assistance</button></a></div>
+          </div>
+
+          <div class="doc" id="doc">
+            <div class="docImg" id="image">
+              <img
+                src="https://scontent.xx.fbcdn.net/v/t1.15752-9/405960876_1120623609102743_7017479055897099234_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=510075&_nc_ohc=wFJU7NBWOM8AX92Dxsi&_nc_oc=AQkZWhylN8TIIJE0bibzZtdCJJWiQrc51FKN-Ty0vi0YF5lbpBXdA7kmzJrOVh0iaRJnmxn42gctItrnKx4AoNhK&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTUEzUtNArYknunuLptFXD_AWvASQ6eimeZ0btICRyOAg&oe=65A56137"
+                alt=""
+                height=130
+                width=160
+              />
+            </div>
+            <div class="docInfo">
+              <h3 id="name">Shirish Maharjan</h3>
+              <p class="edu">B.Arch</p>
+              <p class="speciality">Buildings</p>
+              <p class="experience">7+ years of experience</p>
+              <p class="availability">9:00 AM to 5:00 PM</p>
+            </div>
+            <div class="book"><a href="https://www.facebook.com/blue.mimosa1"><button>Request Assistance</button></a></div>
+          </div>
+
+          <div class="doc">
+            <div class="docImg" id="image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeLJnzgcw-0NEcuH0joPa1I_-MCWg-yJ_v1FrDzT8&s"
+                alt=""
+              />
+            </div>
+            <div class="docInfo">
+              <h3 id="name">Rabin Lamichhane</h3>
+              <p class="edu">BE Civil</p>
+              <p class="speciality">housing</p>
+              <p class="experience">6+ years of experience</p>
+              <p class="availability">9:00 AM to 5:00 PM</p>
+            </div>
+            <div class="book"><a href="https://www.facebook.com/unikch.maharjan.7"><button>Request Assistance</button></a></div>
+          </div>
+        </div>
+      </div>
+        </div>
+        <div id="overlay" class="pop"></div>
+    </div>
+
+
+    <div class="container2">
+        <div class="content1 border">
+            <div class="hospitalImage">
+            </div>
+            <div class="slogan border">
+                <div class="text">
+                    <br><br>
+                <p style="font-size:40px">The future of Engineering starts now.</p>
+                </div>
+                <div class="btn"><button>Get Started</button></div><br><br><br><br><br>
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="container3 border">
+        <!-- <p class="intro" style="font-weight: 500; font-size: 20px;">Introduction</p> -->
+        <h2 class="intro" style="font-weight: 500">Introduction</h2>
+        <p class="border">
+        Our specialty at Kipaa Designs and Solutions is offering state-of-the-art engineering consulting services that are specifically designed to satisfy the changing demands of contemporary industries. Since its founding in 2023, our company has led the way in promoting innovation and providing our clients with top-notch engineering solutions.
+        </p>
+        <p class="border">
+        Together, our team of skilled engineers, architects, and business specialists provides comprehensive services in [certain engineering professions or sectors]. We enjoy taking on challenging problems, whether they involve planning, creating, or carrying out complicated projects.
+        </p>
+        <p class="border">
+        We are proud of our client-centric methodology, which places a high value on having a thorough grasp of your particular needs. Our solutions are designed to guarantee efficiency, sustainability, and cost-effectiveness—not just to meet but to beyond expectations.
+        </p>
+    </div>
+
+<br><br><br>
+
+
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/411652090_333021989547405_6927028289585117091_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=510075&_nc_ohc=GizC4vd8M2EAX-h-mde&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdThjGmI2Nw_5azzoBwWyFvB-eUSlslq9ge87ZE3UA5FIQ&oe=65A7D3D6" style="width:100%">
+  <div class="texts">Design 1</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/411852354_891601482186477_1597806791037334226_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=510075&_nc_ohc=smqwDtxGR4MAX8V7r8L&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSbDzPjoDHcDqQT9HhjW9OfYU_-a__srdmEkG1dxUSrJQ&oe=65A7E948" style="width:100%">
+  <div class="texts"><font color="black">Design 2</font></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/411579328_1506190570218604_6039291880643160568_n.jpg?stp=dst-jpg_p1080x2048&_nc_cat=104&ccb=1-7&_nc_sid=510075&_nc_ohc=ZDPaC2cO65QAX-f0nrU&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRn9MOLvcJl3QM5XaKfDB__x0UlJtrZSB1zIAn5itmYkw&oe=65A7D64F" style="width:100%">
+  <div class="texts">Design 3</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<br><br><br>
+
+
+
+    <div class="container4 border">
+
+            <div class="minicontainer border">
+                <!-- <i class="fa-solid fa-user-doctor fa-2xl"></i> -->
+                <h3 style="font-weight: 500">our work</h3>
+                <p>
+                    updates on your works
+                </p>
+            </div>
+
+        
+            <div class="minicontainer border" data-open="#locate">
+                <!-- <i class="fa-solid fa-pills fa-2xl"></i> -->
+                <h3 style="font-weight: 500">Our Location</h3>
+                <p>
+                    visit us at our office.
+                </p>
+            </div>
+
+
+            <div class="minicontainer border" data-open="#contactContent">
+                <!-- <i class="fa-solid fa-user-doctor fa-2xl"></i> -->
+                <h3 style="font-weight: 500">Contact Us</h3>
+                <p>
+                    let us show you our creativity.
+                </p>
+            </div>
+
+
+    </div>
+
+<script>
+        const alert = document.querySelector(".alert");
+        const error = document.querySelector(".error");
+        setTimeout(() => {
+            // alert.style.display = "none";
+            error.style.display = "none";
+        }, 3000);
+        </script>
+    <script src="script.js"></script>
+
+
+
+    <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    <!-- <script src="https://kit.fontawesome.com/e87b42cfc1.js" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
