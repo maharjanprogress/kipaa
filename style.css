@@ -126,13 +126,13 @@
 }
 
 #locate {
-  height: 40rem;
-  min-width: 37rem;
+  height: 105vw;
+  min-width: 80vw;
   position: fixed;
   width: 30px;
   background-color: white;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  padding: 35px 40px;
+  padding: 4vw 4.2vw;
   border-radius: 5px;
   z-index: 5;
   top: 50%;
