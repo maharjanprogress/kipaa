@@ -110,8 +110,8 @@
 }
 
 #aboutContent {
-  height: 80vw;
-  min-width: 70vw;
+  height: 57vw;
+  min-width: 45vw;
   position: fixed;
   width: 30px;
   background-color: white;
@@ -123,11 +123,12 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   text-align: center;
+  font-size: 2vw;
 }
 
 #locate {
-  height: 105vw;
-  min-width: 80vw;
+  height: 52vw;
+  min-width: 55vw;
   position: fixed;
   width: 30px;
   background-color: white;
@@ -139,21 +140,21 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   text-align: center;
+  font-size: 2vw;
 }
 
 .aboutInsideContent {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 85%;
-  /* border: 1px solid black; */
-  margin: 3vw 0;
+  margin: 3vw 0px;
   font-size: 2.2vw;
 }
 
 #contactContent {
-  height: 80vw;
-  min-width: 57vw;
+  height: 70%;
+  min-width: 60%;
   position: fixed;
   width: 30px;
   background-color: white;
@@ -166,6 +167,7 @@
   transform: translate(-50%, -50%) scale(0);
   text-align: center;
   font-size: 1.6vw;
+  overflow: scroll;
 }
 #admina {
   height: 100%;
@@ -193,20 +195,21 @@
 }
 
 #supportContent {
-  height: 90vw;
-  min-width: 63vw;
+  height: 70%;
+  min-width: 50%;
   position: fixed;
   width: 30px;
   background-color: white;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  padding: 3vw 4vw;
+  padding: 2%;
   border-radius: 5px;
   z-index: 5;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   text-align: center;
-  font-size: 2vw;
+  font-size: 80%;
+  overflow: scroll;
 }
 
 .supportInsideContent {
@@ -219,7 +222,6 @@
 }
 
 #supportImg {
-  height: 300px;
   width: 100%;
   margin: 5px 0;
   border-radius: 5px;
@@ -333,14 +335,14 @@
 
 .connect button {
   padding: 0.9vw 2.5vw;
-    border-radius: 30px;
-    border: 2px solid #380bdb;
-    cursor: pointer;
-    font-weight: 500;
-    color: #380bdb;
-    margin-top: 2vw;
-    background: none;
-    font-size: 1.3vw;
+  border-radius: 30px;
+  border: 2px solid #380bdb;
+  cursor: pointer;
+  font-weight: 500;
+  color: #380bdb;
+  margin-top: 2%;
+  background: none;
+  font-size: 99%;
 }
 
 .connect button:hover {
