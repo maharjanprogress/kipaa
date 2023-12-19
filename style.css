@@ -288,6 +288,7 @@
   background-position-y:bottom ;
   background-size: contain;
   position: relative;
+  margin: 7vw 0vw;
 }
 
 .content1 {
@@ -351,11 +352,11 @@
 .container3 {
   display: flex;
   justify-content: center;
-  height: 14rem;
+  height: 40vw;
   flex-direction: column;
   align-items: center;
-  margin: 40px 0;
-  font-size: 16px;
+  margin: 4vw 0;
+  font-size: 1.6vw;
 }
 
 .container3 p {
