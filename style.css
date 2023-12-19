@@ -110,13 +110,13 @@
 }
 
 #aboutContent {
-  height: 43rem;
-  min-width: 37rem;
+  height: 80vw;
+  min-width: 70vw;
   position: fixed;
   width: 30px;
   background-color: white;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  padding: 35px 40px;
+  padding: 4vw 4.2vw;
   border-radius: 5px;
   z-index: 5;
   top: 50%;
@@ -147,7 +147,8 @@
   justify-content: space-between;
   height: 85%;
   /* border: 1px solid black; */
-  margin: 20px 0;
+  margin: 3vw 0;
+  font-size: 2.2vw;
 }
 
 #contactContent {
