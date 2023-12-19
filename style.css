@@ -191,19 +191,20 @@
 }
 
 #supportContent {
-  height: 50rem;
-  min-width: 38rem;
+  height: 90vw;
+  min-width: 63vw;
   position: fixed;
   width: 30px;
   background-color: white;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  padding: 35px 40px;
+  padding: 3vw 4vw;
   border-radius: 5px;
   z-index: 5;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   text-align: center;
+  font-size: 2vw;
 }
 
 .supportInsideContent {
@@ -327,14 +328,15 @@
 }
 
 .connect button {
-  padding: 10px 25px;
-  border-radius: 30px;
-  border: 2px solid #380bdb;
-  cursor: pointer;
-  font-weight: 500;
-  color: #380bdb;
-  margin-top: 20px;
-  background: none;
+  padding: 0.9vw 2.5vw;
+    border-radius: 30px;
+    border: 2px solid #380bdb;
+    cursor: pointer;
+    font-weight: 500;
+    color: #380bdb;
+    margin-top: 2vw;
+    background: none;
+    font-size: 1.3vw;
 }
 
 .connect button:hover {
