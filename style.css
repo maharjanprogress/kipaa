@@ -366,29 +366,30 @@
 }
 
 .container4 {
-  background: #262221;
-  height: 45rem;
+  background: rgb(38, 34, 33);
+  height: 69vw;
   max-width: 100%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 2.75rem 11rem;
-  gap: 50px;
-  position: relative;
-  overflow: hidden;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+  padding: 3vw 13vw;
+  gap: 6vw;
+  position: absolute;
+  overflow-x: scroll;
 }
 
 .container4 .minicontainer {
   /* display: block; */
-  height: 290px;
+  height: 25vw;
   background: #887F77;
-  width: 445px;
-  padding: 40px 50px;
-  border-radius: 10px;
+  width: 33vw;
+  padding: 5vw;
+  border-radius: 4vw;
   cursor: pointer;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   grid-column: 1/4;
+  font-size: 1.6vw;
 }
 
 .container4 .minicontainer:hover {
