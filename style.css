@@ -286,14 +286,14 @@
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y:bottom ;
-  background-size: cover;
+  background-size: contain;
   position: relative;
 }
 
 .content1 {
   display: flex;
   align-items: center;
-  margin: 0 11rem;
+  margin: 0 10vw;
   position: relative;
   overflow: hidden;
 }
@@ -305,7 +305,7 @@
 
 .slogan {
   width: 45%;
-  font-size: 37px;
+  font-size: 1vw;
   color: #860e40;
   /* display: flex;
     align-items: center;
@@ -313,14 +313,15 @@
 }
 
 .btn button {
-  padding: 10px 25px;
+  padding: 1vw;
   border-radius: 5px;
-  border: 2px solid #860e40;
+  border: 2px solid rgb(134, 14, 64);
   cursor: pointer;
   font-weight: 500;
-  color: #860e40;
-  margin-top: 20px;
+  color: rgb(134, 14, 64);
+  margin-top: 2vw;
   background: none;
+  font-size: 1.3vw;
 }
 
 .btn button:hover {
