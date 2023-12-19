@@ -37,18 +37,19 @@
 }
 
 .left img {
-  height: 70px;
+  height: 7vw;
 }
 
 .right {
   position: absolute;
   right: 0;
   align-items: center;
+  font-size: 1.5vw;
 }
 
 .right li {
   list-style: none;
-  margin: 0 3rem;
+  margin: 0 3vw;
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -83,8 +84,8 @@
   background: white;
   padding: 10px;
   font-weight: 400;
-  font-size: 14px;
-  width: 15rem;
+  font-size: 1.2vw;
+  width: 10vw;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
