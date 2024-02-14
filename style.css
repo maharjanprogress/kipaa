@@ -183,10 +183,10 @@
   transform: translate(-50%, -50%) scale(0);
   text-align: center;
   font-size: 1.6vw;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 #admina {
-  height: 100%;
+  height: 70%;
   min-width: 47vw;
   position: fixed;
   background-color: white;
@@ -200,6 +200,7 @@
   text-align: center;
   font-size: 1vw;
   width: 3vw;
+  overflow-y: scroll;
 }
 .contactInsideContent {
   display: flex;
@@ -225,7 +226,7 @@
   transform: translate(-50%, -50%) scale(0);
   text-align: center;
   font-size: 80%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .supportInsideContent {
