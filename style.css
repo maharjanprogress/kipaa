@@ -186,7 +186,7 @@
   overflow-y: scroll;
 }
 #admina {
-  height: 70%;
+  height: 45vw;
   min-width: 47vw;
   position: fixed;
   background-color: white;
@@ -200,7 +200,6 @@
   text-align: center;
   font-size: 1vw;
   width: 3vw;
-  overflow-y: scroll;
 }
 .contactInsideContent {
   display: flex;
