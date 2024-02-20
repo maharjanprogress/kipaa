@@ -354,23 +354,6 @@
   transition: all 0.25s ease;
 }
 
-.connect button {
-  padding: 0.9vw 2.5vw;
-  border-radius: 30px;
-  border: 2px solid #380bdb;
-  cursor: pointer;
-  font-weight: 500;
-  color: #380bdb;
-  margin-top: 2%;
-  background: none;
-  font-size: 99%;
-}
-
-.connect button:hover {
-  background-color: #380bdb;
-  color: rgb(255, 255, 255);
-  transition: all 0.25s ease;
-}
 
 .container3 {
   display: flex;
